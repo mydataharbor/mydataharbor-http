@@ -1,4 +1,8 @@
 # mydataharbor-http-plugin
+# 作者
+
+MyDataHarbor([1053618636@qq.com](mailto:1053618636@qq.com))
+
 # 项目介绍
 
 该项目是为MyDataHarbor实现http协议的Sink，让使用者可以将数据通过http发送给下游。
