@@ -219,7 +219,7 @@ import java.util.Map;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class HttpSinkEntity {
+public class HttpSinkReq {
 
   @MyDataHarborMarker(title = "请求方法", require = true)
   private HttpMethod httpMethod;

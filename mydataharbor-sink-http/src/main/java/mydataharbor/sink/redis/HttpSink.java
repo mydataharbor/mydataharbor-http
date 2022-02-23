@@ -222,7 +222,7 @@ import java.util.concurrent.TimeUnit;
  * @Date 2021/7/6
  **/
 @Slf4j
-public class HttpSink implements IDataSink<HttpSinkEntity, BaseSettingContext> {
+public class HttpSink implements IDataSink<HttpSinkReq, BaseSettingContext> {
 
   private HttpSinkConfig httpSinkConfig;
 
@@ -255,7 +255,7 @@ public class HttpSink implements IDataSink<HttpSinkEntity, BaseSettingContext> {
   }
 
   @Override
-  public WriterResult write(HttpSinkEntity record, BaseSettingContext settingContext) throws ResetException {
+  public WriterResult write(HttpSinkReq record, BaseSettingContext settingContext) throws ResetException {
     Request.Builder requestBuilder = new Request.Builder()
       .url(httpSinkConfig.getUrl());
     switch (record.getHttpMethod()) {
@@ -299,8 +299,8 @@ public class HttpSink implements IDataSink<HttpSinkEntity, BaseSettingContext> {
   }
 
   @Override
-  public WriterResult write(List<HttpSinkEntity> records, BaseSettingContext settingContext) throws ResetException {
-    for (HttpSinkEntity record : records) {
+  public WriterResult write(List<HttpSinkReq> records, BaseSettingContext settingContext) throws ResetException {
+    for (HttpSinkReq record : records) {
       write(record, settingContext);
     }
     return WriterResult.builder().commit(true).success(true).msg("http request success！").build();
