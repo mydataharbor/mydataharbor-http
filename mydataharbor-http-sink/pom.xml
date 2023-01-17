@@ -5,24 +5,19 @@
   <parent>
     <artifactId>mydataharbor-http</artifactId>
     <groupId>com.mydataharbor</groupId>
-    <version>1.1.0</version>
+    <version>${revision}</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
 
-  <artifactId>mydataharbor-sink-http</artifactId>
+  <artifactId>mydataharbor-http-sink</artifactId>
 
   <dependencies>
-    <dependency>
-      <groupId>com.squareup.okhttp3</groupId>
-      <artifactId>okhttp</artifactId>
-      <version>${okhttp.version}</version>
-    </dependency>
 
-    <dependency>
-      <groupId>com.squareup.okhttp3</groupId>
-      <artifactId>logging-interceptor</artifactId>
-      <version>${okhttp.version}</version>
-    </dependency>
+      <dependency>
+          <groupId>com.mydataharbor</groupId>
+          <artifactId>mydataharbor-http-common</artifactId>
+          <version>${project.version}</version>
+      </dependency>
   </dependencies>
 
 </project>
