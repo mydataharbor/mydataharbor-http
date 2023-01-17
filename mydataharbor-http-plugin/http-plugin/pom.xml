@@ -4,7 +4,7 @@
   <parent>
     <groupId>com.mydataharbor</groupId>
     <artifactId>mydataharbor-http-plugin</artifactId>
-    <version>1.1.0</version>
+    <version>${revision}</version>
   </parent>
   <artifactId>http-plugin</artifactId>
 
