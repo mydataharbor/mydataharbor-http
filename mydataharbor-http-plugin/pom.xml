@@ -16,7 +16,7 @@
   <packaging>pom</packaging>
 
   <properties>
-    <revision>2.0.2</revision>
+    <revision>2.0.1</revision>
     <plugin.version>${project.version}</plugin.version>
 
   </properties>
