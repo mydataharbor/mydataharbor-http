@@ -1,4 +1,4 @@
-package mydataharbor.plugin.sink.http;
+package mydataharbor.plugin.http;
 
 import mydataharbor.IDataPipeline;
 import mydataharbor.plugin.base.creator.AbstractAutoScanPipelineCreator;
@@ -16,7 +16,7 @@ import org.pf4j.ExtensionPoint;
 public class DefaultAutoScanPiplineCretor extends AbstractAutoScanPipelineCreator<Map<String, Object>, BaseSettingContext> implements ExtensionPoint {
   @Override
   public String scanPackage() {
-    return "mydataharbor.plugin.sink.http";
+    return "mydataharbor.plugin.http";
   }
 
   @Override
