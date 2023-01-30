@@ -202,7 +202,7 @@
  *    limitations under the License.
  */
 
-package mydataharbor.sink.http;
+package mydataharbor.plugin.http;
 
 import mydataharbor.IDataSink;
 import mydataharbor.exception.ResetException;
